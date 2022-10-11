@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.MonitorController">
+
+
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="128.0">
+            <children>
+
+                <Button layoutX="30.0" layoutY="251.0" mnemonicParsing="false" onAction="#sendLoad" prefHeight="25.0" prefWidth="73.0" text="Load">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button layoutX="13.0" layoutY="384.0" mnemonicParsing="false" onAction="#sendPayMonitor" prefHeight="25.0" prefWidth="106.0" text="Pay Monitor">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+
+                <Button layoutX="18.0" layoutY="548.0" mnemonicParsing="false" onAction="#sendInformation" prefHeight="25.0" prefWidth="100.0" text="Information">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="77.0" fitWidth="94.0" layoutX="30.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\prestamo.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="77.0" fitWidth="88.0" layoutX="23.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Persons.png" />
+                    </image></ImageView>
+                <Button layoutX="38.0" layoutY="119.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons" />
+                <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="29.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\payMonitorCard.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="77.0" fitWidth="88.0" layoutX="26.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\informacion-De-laboratorio.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tableStudent" layoutX="135.0" layoutY="330.0" prefHeight="271.0" prefWidth="667.0">
+            <columns>
+                <TableColumn fx:id="nameCL" prefWidth="165.0" text="Name" />
+                <TableColumn fx:id="documentCL" prefWidth="160.0" text="Document" />
+                <TableColumn fx:id="ageCL" prefWidth="59.0" text="Age" />
+                <TableColumn fx:id="antiquityCL" prefWidth="147.0" text="Antiquity" />
+                <TableColumn fx:id="coderoomCL" prefWidth="135.0" text="CodeRoom" />
+            </columns>
+        </TableView>
+        <Separator layoutX="132.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="3.0" />
+        <Label layoutX="162.0" layoutY="69.0" text="Name">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="147.0" layoutY="142.0" text="Document">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="a" layoutX="484.0" layoutY="133.0" text="Antiquity">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="501.0" layoutY="70.0" text="Age">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfAge" layoutX="558.0" layoutY="66.0" prefHeight="25.0" prefWidth="177.0" />
+        <TextField fx:id="tfDocument" layoutX="240.0" layoutY="130.0" prefHeight="25.0" prefWidth="177.0" />
+        <TextField fx:id="tfantiquity" layoutX="564.0" layoutY="130.0" prefHeight="25.0" prefWidth="177.0" />
+        <Label layoutX="292.0" layoutY="194.0" text="CodeRoom">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfcoderoom" layoutX="373.0" layoutY="191.0" prefHeight="25.0" prefWidth="177.0" />
+        <Button fx:id="btnDelete" layoutX="373.0" layoutY="263.0" mnemonicParsing="false" onAction="#deleteTable" prefHeight="25.0" prefWidth="88.0" text="Delete" />
+        <Button fx:id="btnFind" layoutX="524.0" layoutY="263.0" mnemonicParsing="false" onAction="#findTable" prefHeight="25.0" prefWidth="69.0" text="Find" />
+        <Button fx:id="btnAdd" layoutX="265.0" layoutY="263.0" mnemonicParsing="false" onAction="#addTable" prefHeight="25.0" prefWidth="69.0" text="Add" />
+        <Button fx:id="btnUpdate" layoutX="634.0" layoutY="263.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="25.0" prefWidth="88.0" text="Update" />
+        <TextField fx:id="tfName" layoutX="233.0" layoutY="68.0" />
+    </children>
+
+</AnchorPane>
