@@ -212,6 +212,7 @@ public class StudentController  implements Bar4collection1 , Initializable {
             this.careerCL.setCellValueFactory(new PropertyValueFactory<aa,String>("career"));
         }catch (Exception e){
             System.out.println("Error al cargar los datos");
+            System.out.println();
         }
 
     }
