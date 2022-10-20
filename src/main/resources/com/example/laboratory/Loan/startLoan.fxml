@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="696.0" prefWidth="881.0" style="-fx-background-color: #3fd7eb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.StartLoadController">
+   <children>
+      <AnchorPane prefHeight="696.0" prefWidth="125.0">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="104.0" layoutX="28.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\personas - Color.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="88.0" layoutX="24.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\robot.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="109.0" fitWidth="91.0" layoutX="21.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\tarjeta pago a color.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="36.0" layoutY="115.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="314.0" mnemonicParsing="false" onAction="#sendPayMonitor" text="PayMonitors" />
+            <Button layoutX="25.0" layoutY="485.0" mnemonicParsing="false" onAction="#sendElements" prefHeight="25.0" prefWidth="83.0" text="Element">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="77.0" fitWidth="88.0" layoutX="22.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Informacion persona a color.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="23.0" layoutY="645.0" mnemonicParsing="false" onAction="#sendInformation" text="Information" />
+         </children>
+      </AnchorPane>
+      <Separator layoutX="124.0" orientation="VERTICAL" prefHeight="696.0" prefWidth="0.0" style="-fx-background-color: #141414;" />
+      <TableView fx:id="tableLoan" layoutX="130.0" layoutY="458.0" onMouseClicked="#select" prefHeight="238.0" prefWidth="893.0">
+         <columns>
+          <TableColumn fx:id="nameManagerCL" prefWidth="114.0" text="NameManager" />
+            <TableColumn fx:id="nameTypeManager" prefWidth="75.0" text="Type NameManger" />
+          <TableColumn fx:id="namePersonCL" minWidth="0.0" prefWidth="130.0" text="NamePerson" />
+            <TableColumn fx:id="nameTypePerson" prefWidth="75.0" text="Type NamePerson" />
+            <TableColumn fx:id="nameElementCL" prefWidth="168.0" text="Name Element" />
+            <TableColumn fx:id="stockCL" prefWidth="120.0" text="Stock Element" />
+            <TableColumn fx:id="nameCodeLoanCL" minWidth="0.0" prefWidth="79.0" text="CodeLoan" />
+            <TableColumn fx:id="dayLoanCL" prefWidth="140.0" text="Day Loan" />
+         </columns>
+      </TableView>
+      <Button layoutX="247.0" layoutY="403.0" mnemonicParsing="false" onAction="#addLoan" text="Add" />
+      <Button layoutX="351.0" layoutY="403.0" mnemonicParsing="false" onAction="#clearTf" text="Clear" />
+      <TextField fx:id="tfStockElement" layoutX="418.0" layoutY="268.0" />
+      <TextField fx:id="tfCodeElement" layoutX="418.0" layoutY="336.0" />
+      <TextField fx:id="tfNamePerson" layoutX="158.0" layoutY="267.0" />
+      <TextField fx:id="tfNameManager" layoutX="158.0" layoutY="190.0" />
+      <TextField fx:id="tfNameElement" layoutX="155.0" layoutY="336.0" />
+      <TextField fx:id="tfDayLoan" layoutX="418.0" layoutY="190.0" />
+      <Button layoutX="741.0" layoutY="231.0" mnemonicParsing="false" onAction="#finishLoan" text="Finish" />
+      <Label layoutX="191.0" layoutY="152.0" text="Name manager" />
+      <Label layoutX="195.0" layoutY="234.0" text="NamePerson" />
+      <Label layoutX="190.0" layoutY="310.0" text="Name Element" />
+      <Label layoutX="467.0" layoutY="243.0" text="Stock Element" />
+      <Label layoutX="467.0" layoutY="310.0" text="Code Loan" />
+      <Label layoutX="440.0" layoutY="161.0" text="Day loan YY-MM-DD" />
+      <Label layoutX="722.0" layoutY="161.0" text="Date Finish loan" />
+      <TextField fx:id="tfFinishLoan" layoutX="681.0" layoutY="190.0" />
+      <Label layoutX="508.0" layoutY="23.0" text="Create Loan">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -21,6 +21,8 @@ public class HelloController {
     private Stage stage;
     private Scene scene;
 
+    private Parent root;
+
 
 
     public void user(ActionEvent e) throws IOException{
@@ -42,8 +44,8 @@ public class HelloController {
         this.stage.show();
     }
 
-    public void load(ActionEvent e) throws IOException{
-        URL url= new File("src/main/resources/com/example/laboratory/Load/startLoad.fxml").toURI().toURL();
+    public void loan(ActionEvent e) throws IOException{
+        URL url= new File("src/main/resources/com/example/laboratory/Loan/startLoan.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
         Scene scene = new Scene(root);
         this.stage = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -62,9 +64,25 @@ public class HelloController {
         this.stage.show();
     }
 
+    public void sendPayMonitor(ActionEvent e)throws IOException{
+        URL url= new File("src/main/resources/com/example/laboratory/PayMonitor/cashMonitor.fxml").toURI().toURL();
+        Parent root = FXMLLoader.load(url);
+        Scene scene = new Scene(root);
+        this.stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        this.scene = root.getScene();
+        this.stage.setScene(this.scene);
+        this.stage.show();
+    }
+
+    public void sendElements(ActionEvent e)throws  IOException{
+        URL url= new File("src/main/resources/com/example/laboratory/Elements/elements.fxml").toURI().toURL();
+        Parent root = FXMLLoader.load(url);
+        Scene scene = new Scene(root);
+        this.stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        this.scene = root.getScene();
+        this.stage.setScene(this.scene);
+        this.stage.show();
 
 
-
-
-
+    }
 }

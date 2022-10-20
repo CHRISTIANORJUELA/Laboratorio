@@ -15,4 +15,5 @@ module com.example.laboratory {
     exports com.example.laboratory;
     exports com.example.laboratory.controllers;
     opens com.example.laboratory.controllers to javafx.fxml;
+    opens com.example.laboratory.models to javafx.base;
 }

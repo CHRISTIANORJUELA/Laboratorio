@@ -1,14 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.laboratory.controllers.InformationController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="746.0" prefWidth="856.0" style="-fx-background-color: #3fd7eb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.InformationController">
+   <children>
+      <Label layoutX="261.0" layoutY="126.0" prefHeight="17.0" prefWidth="134.0" text="Information with code" />
+      <TextField fx:id="tfSerach" layoutX="406.0" layoutY="122.0" />
+      <Button layoutX="515.0" layoutY="330.0" mnemonicParsing="false" onAction="#numberLoansMonitor" text="number loans Monitors" />
+      <Button layoutX="335.0" layoutY="330.0" mnemonicParsing="false" onAction="#totalAmount" text="Total Amount  " />
+      <Button layoutX="584.0" layoutY="205.0" mnemonicParsing="false" onAction="#numberElementsLoans" text="Search" />
+      <Button layoutX="585.0" layoutY="122.0" mnemonicParsing="false" onAction="#search" text="search" />
+      <Label layoutX="244.0" layoutY="209.0" text="Number Elements in loans" />
+      <TextField fx:id="tfNumberElements" layoutX="406.0" layoutY="205.0" />
+      <JFXTextArea fx:id="textTarea" focusColor="#274dd7" layoutX="261.0" layoutY="473.0" style="-fx-background-color: #edf5ef;" unFocusColor="WHITE" />
+      <AnchorPane layoutY="6.0" prefHeight="743.0" prefWidth="134.0">
+         <children>
+            <Button layoutX="32.0" layoutY="103.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons" />
+            <Button layoutX="46.0" layoutY="263.0" mnemonicParsing="false" onAction="#sendLoan" text="Loan" />
+            <Button layoutX="32.0" layoutY="414.0" mnemonicParsing="false" onAction="#sendElements" text="Elements" />
+            <Button layoutX="28.0" layoutY="687.0" mnemonicParsing="false" onAction="#sendInformation" text="Information" />
+            <ImageView fitHeight="81.0" fitWidth="86.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\personas - Color.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="86.0" layoutX="34.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\loan-Img.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="86.0" layoutX="24.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\robot.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="86.0" layoutX="24.0" layoutY="585.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Informacion persona a color.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="18.0" layoutY="543.0" mnemonicParsing="false" onAction="#sendPayMonitor" text="Pay Monitors" />
+            <ImageView fitHeight="81.0" fitWidth="96.0" layoutX="22.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\tarjeta pago a color.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="131.0" layoutY="-25.0" orientation="VERTICAL" prefHeight="774.0" prefWidth="4.0" style="-fx-background-color: #141414;" />
+      <Label layoutX="410.0" layoutY="29.0" text="Information">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

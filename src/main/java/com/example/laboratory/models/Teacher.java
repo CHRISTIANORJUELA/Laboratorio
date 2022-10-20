@@ -9,4 +9,21 @@ public class Teacher extends Person{
         this.course = course;
         this.codeRoom = codeRoom;
     }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public String getCodeRoom() {
+        return codeRoom;
+    }
+
+    public void setCodeRoom(String codeRoom) {
+        this.codeRoom = codeRoom;
+    }
+
 }

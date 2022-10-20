@@ -17,43 +17,46 @@
    <children>
       <AnchorPane prefHeight="539.0" prefWidth="752.0">
          <children>
-            <AnchorPane layoutX="3.0" prefHeight="606.0" prefWidth="787.0" style="-fx-background-color: #0d48bd;">
+            <AnchorPane prefHeight="606.0" prefWidth="810.0" style="-fx-background-color: #0d48bd;">
                <children>
-                  <AnchorPane layoutX="70.0" layoutY="322.0" prefHeight="225.0" prefWidth="646.0">
+                  <AnchorPane layoutX="28.0" layoutY="232.0" prefHeight="225.0" prefWidth="779.0">
                      <children>
-                        <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="256.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="339.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\prestamo.png" />
+                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Informacion persona a color.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="personsImg" fitHeight="101.0" fitWidth="115.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\personas - Color.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="462.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <Button depthTest="ENABLE" layoutX="2.0" layoutY="142.0" mnemonicParsing="false" onAction="#persons" prefHeight="43.0" prefWidth="125.0" text="Persons" />
+                        <Button depthTest="ENABLE" layoutX="161.0" layoutY="142.0" mnemonicParsing="false" onAction="#loan" prefHeight="43.0" prefWidth="125.0" text="Loan" />
+                        <Button depthTest="ENABLE" layoutX="327.0" layoutY="142.0" mnemonicParsing="false" onAction="#information" prefHeight="43.0" prefWidth="125.0" text="Information" />
+                        <Button layoutX="640.0" layoutY="142.0" mnemonicParsing="false" onAction="#sendElements" prefHeight="43.0" prefWidth="125.0" text="Elements" />
+                        <ImageView fitHeight="92.0" fitWidth="125.0" layoutX="192.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\informacion-De-laboratorio.png" />
+                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\loan-Img.png" />
+                           </image></ImageView>
+                        <Button layoutX="496.0" layoutY="142.0" mnemonicParsing="false" onAction="#sendPayMonitor" prefHeight="43.0" prefWidth="109.0" text="Pay Monitor" />
+                        <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="496.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\tarjeta pago a color.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="652.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\robot.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="personsImg" fitHeight="125.0" fitWidth="135.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Persons.png" />
-                           </image>
-                        </ImageView>
-                        <Button depthTest="ENABLE" layoutX="34.0" layoutY="163.0" mnemonicParsing="false" onAction="#persons" prefHeight="43.0" prefWidth="125.0" text="Persons" />
-                        <Button depthTest="ENABLE" layoutX="261.0" layoutY="163.0" mnemonicParsing="false" onAction="#load" prefHeight="43.0" prefWidth="125.0" text="Load" />
-                        <Button depthTest="ENABLE" layoutX="473.0" layoutY="163.0" mnemonicParsing="false" onAction="#information" prefHeight="43.0" prefWidth="125.0" text="Information" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="292.0" layoutY="28.0" prefHeight="104.0" prefWidth="109.0" />
-                  <ImageView fitHeight="115.0" fitWidth="151.0" layoutX="347.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\User2.png" />
-                     </image>
-                  </ImageView>
                   <Label layoutX="291.0" layoutY="21.0" text="Welcome" textFill="WHITE">
                      <font>
                         <Font size="69.0" />
                      </font>
                   </Label>
                   <Separator layoutX="11.0" layoutY="104.0" prefHeight="8.0" prefWidth="796.0" />
-                  <Button depthTest="ENABLE" layoutX="342.0" layoutY="264.0" mnemonicParsing="false" onAction="#user" prefHeight="43.0" prefWidth="125.0" text="User" />
                </children>
             </AnchorPane>
          </children>

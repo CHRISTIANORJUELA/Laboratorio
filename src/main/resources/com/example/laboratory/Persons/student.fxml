@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
@@ -11,91 +13,115 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #00b3b3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.StudentController">
+<AnchorPane prefHeight="696.0" prefWidth="881.0" style="-fx-background-color: #3fd7eb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.StudentController">
     <children>
-        <AnchorPane prefHeight="600.0" prefWidth="128.0">
+        <AnchorPane layoutY="1.0" prefHeight="696.0" prefWidth="132.0">
             <children>
 
-                <Button layoutX="30.0" layoutY="251.0" mnemonicParsing="false" onAction="#sendLoad" prefHeight="25.0" prefWidth="73.0" text="Load">
+                <Button layoutX="30.0" layoutY="234.0" mnemonicParsing="false" onAction="#sendLoan" prefHeight="25.0" prefWidth="73.0" text="Load">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
-                <Button layoutX="13.0" layoutY="384.0" mnemonicParsing="false" onAction="#sendPayMonitor" prefHeight="25.0" prefWidth="106.0" text="Pay Monitor">
+                <Button layoutX="16.0" layoutY="387.0" mnemonicParsing="false" onAction="#sendPayMonitor" prefHeight="17.0" prefWidth="100.0" text="Pay Monitor">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
 
-                <Button layoutX="18.0" layoutY="548.0" mnemonicParsing="false" onAction="#sendInformation" prefHeight="25.0" prefWidth="100.0" text="Information">
+                <Button layoutX="18.0" layoutY="522.0" mnemonicParsing="false" onAction="#sendInformation" prefHeight="25.0" prefWidth="100.0" text="Information">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
-            <ImageView fitHeight="77.0" fitWidth="94.0" layoutX="30.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="79.0" fitWidth="88.0" layoutX="28.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\prestamo.png" />
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\robot.png" />
                </image></ImageView>
-            <ImageView fitHeight="77.0" fitWidth="88.0" layoutX="23.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="65.0" fitWidth="69.0" layoutX="31.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Persons.png" />
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\personas - Color.png" />
                </image></ImageView>
-            <Button layoutX="38.0" layoutY="119.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons" />
-            <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="29.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="37.0" layoutY="101.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons" />
+            <ImageView fitHeight="92.0" fitWidth="88.0" layoutX="31.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\payMonitorCard.png" />
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\tarjeta pago a color.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="77.0" fitWidth="88.0" layoutX="26.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="85.0" fitWidth="88.0" layoutX="24.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\informacion-De-laboratorio.png" />
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Informacion persona a color.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="20.0" layoutY="648.0" mnemonicParsing="false" onAction="#sendElements" prefHeight="25.0" prefWidth="88.0" text="Element">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="92.0" fitWidth="108.0" layoutX="34.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\loan-Img.png" />
                </image>
             </ImageView>
             </children>
         </AnchorPane>
-        <TableView fx:id="tableStudent" layoutX="135.0" layoutY="330.0" prefHeight="271.0" prefWidth="667.0">
+        <TableView fx:id="tableStudent" layoutX="133.0" layoutY="414.0" onMouseClicked="#select" prefHeight="284.0" prefWidth="782.0">
             <columns>
                 <TableColumn fx:id="nameCL" prefWidth="165.0" text="Name" />
                 <TableColumn fx:id="documentCL" prefWidth="160.0" text="Document" />
-                <TableColumn fx:id="ageCL" prefWidth="59.0" text="Age" />
-                <TableColumn fx:id="semesterCL" prefWidth="147.0" text="Semester" />
-                <TableColumn fx:id="careerCL" prefWidth="135.0" text="Career" />
+                <TableColumn fx:id="ageCL" prefWidth="101.0" text="Age" />
+                <TableColumn fx:id="semesterCL" prefWidth="175.0" text="Semester" />
+                <TableColumn fx:id="careerCL" prefWidth="179.0" text="Career" />
             </columns>
         </TableView>
-        <Separator layoutX="132.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="3.0" />
-        <Label layoutX="162.0" layoutY="69.0" text="Name">
+        <Separator layoutX="132.0" orientation="VERTICAL" prefHeight="696.0" prefWidth="0.0" style="-fx-background-color: #181a19;" />
+        <Label layoutX="195.0" layoutY="170.0" text="Name">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <Label layoutX="147.0" layoutY="142.0" text="Document">
+        <Label layoutX="165.0" layoutY="236.0" text="Document">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <Label layoutX="484.0" layoutY="133.0" text="Semester">
+        <Label layoutX="626.0" layoutY="236.0" text="Semester">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <Label layoutX="501.0" layoutY="70.0" text="Age">
+        <Label layoutX="633.0" layoutY="170.0" text="Age">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <TextField fx:id="tfAge" layoutX="558.0" layoutY="66.0" prefHeight="25.0" prefWidth="177.0" />
-        <TextField fx:id="tfDocument" layoutX="240.0" layoutY="130.0" prefHeight="25.0" prefWidth="177.0" />
-        <TextField fx:id="tfSemester" layoutX="564.0" layoutY="130.0" prefHeight="25.0" prefWidth="177.0" />
-        <Label layoutX="307.0" layoutY="193.0" text="Career">
+        <TextField fx:id="tfAge" layoutX="674.0" layoutY="168.0" prefHeight="25.0" prefWidth="177.0" />
+        <TextField fx:id="tfDocument" layoutX="237.0" layoutY="234.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="tfSemester" layoutX="700.0" layoutY="234.0" prefHeight="25.0" prefWidth="177.0" />
+        <Label layoutX="395.0" layoutY="279.0" text="Career">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <TextField fx:id="tfCareer" layoutX="373.0" layoutY="191.0" prefHeight="25.0" prefWidth="177.0" />
-        <Button fx:id="btnDelete" layoutX="373.0" layoutY="263.0" mnemonicParsing="false" onAction="#deleteTable" prefHeight="25.0" prefWidth="88.0" text="Delete" />
-        <Button fx:id="btnFind" layoutX="524.0" layoutY="263.0" mnemonicParsing="false" onAction="#findTable" prefHeight="25.0" prefWidth="69.0" text="Find" />
-        <Button fx:id="btnAdd" layoutX="265.0" layoutY="263.0" mnemonicParsing="false" onAction="#addTable" prefHeight="25.0" prefWidth="69.0" text="Add" />
-        <Button fx:id="btnUpdate" layoutX="634.0" layoutY="263.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="25.0" prefWidth="88.0" text="Update" />
-        <TextField fx:id="tfName" layoutX="233.0" layoutY="68.0" />
+        <TextField fx:id="tfCareer" layoutX="448.0" layoutY="276.0" prefHeight="25.0" prefWidth="158.0" />
+        <Button fx:id="btnDelete" layoutX="545.0" layoutY="349.0" mnemonicParsing="false" onAction="#deleteTable" prefHeight="25.0" prefWidth="88.0" text="Delete" />
+        <Button fx:id="btnAdd" layoutX="290.0" layoutY="349.0" mnemonicParsing="false" onAction="#addTable" prefHeight="25.0" prefWidth="69.0" text="Add" />
+        <Button fx:id="btnUpdate" layoutX="404.0" layoutY="349.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="25.0" prefWidth="88.0" text="Update" />
+        <TextField fx:id="tfName" layoutX="250.0" layoutY="168.0" />
+      <TextField fx:id="tfFilter" layoutX="359.0" layoutY="76.0" onKeyReleased="#Filter" prefHeight="25.0" prefWidth="403.0" />
+      <Label layoutX="234.0" layoutY="59.0" text="SelectFilter">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="boxSelectFilter" layoutX="222.0" layoutY="76.0" prefHeight="25.0" prefWidth="113.0" />
+      <Button layoutX="775.0" layoutY="76.0" mnemonicParsing="false" onAction="#clearSelectFilter" prefHeight="20.0" prefWidth="27.0" text="X" />
+      <ButtonBar layoutX="417.0" layoutY="127.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button layoutX="670.0" layoutY="349.0" mnemonicParsing="false" onAction="#clearTfs" prefHeight="25.0" prefWidth="113.0" text="Clear" />
+      <Label layoutX="527.0" layoutY="14.0" text="Student">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

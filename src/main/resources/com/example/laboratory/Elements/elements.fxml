@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="696.0" prefWidth="881.0" style="-fx-background-color: #3fd7eb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.ElementsController">
+   <children>
+      <AnchorPane prefHeight="696.0" prefWidth="135.0">
+         <children>
+            <Button layoutX="36.0" layoutY="103.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons" />
+            <Button layoutX="44.0" layoutY="266.0" mnemonicParsing="false" onAction="#sendLoan" prefHeight="25.0" prefWidth="47.0" text="Loan" />
+            <Button layoutX="26.0" layoutY="460.0" mnemonicParsing="false" onAction="#sendPayMonitor" text="PayMonitor" />
+            <Button layoutX="25.0" layoutY="642.0" mnemonicParsing="false" onAction="#sendInformation" text="Information" />
+            <ImageView fitHeight="92.0" fitWidth="100.0" layoutX="22.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Informacion persona a color.png" />
+               </image></ImageView>
+            <ImageView fitHeight="107.0" fitWidth="111.0" layoutX="15.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\tarjeta pago a color.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="92.0" fitWidth="77.0" layoutX="31.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\loan-Img.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="92.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\personas - Color.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Button layoutX="712.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnSearchElement" text="Search" />
+      <Button layoutX="717.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnDownElement" text="Down" />
+      <TextField fx:id="tfName" layoutX="224.0" layoutY="78.0" />
+      <TextField fx:id="tfCode" layoutX="225.0" layoutY="330.0" />
+      <TextField fx:id="tfSearchElement" layoutX="547.0" layoutY="90.0" />
+      <Button layoutX="269.0" layoutY="371.0" mnemonicParsing="false" onAction="#addElement" prefHeight="25.0" prefWidth="58.0" text="Add" />
+      <TextField fx:id="tfDownElement" layoutX="547.0" layoutY="149.0" />
+      <Label layoutX="180.0" layoutY="82.0" text="Name" />
+      <Label layoutX="173.0" layoutY="141.0" text="Material" />
+      <Label layoutX="183.0" layoutY="195.0" text="Care" />
+      <Label layoutX="181.0" layoutY="334.0" text="Code" />
+      <TextArea fx:id="textArea" layoutX="448.0" layoutY="268.0" prefHeight="74.0" prefWidth="383.0" />
+      <ChoiceBox fx:id="chMaterial" layoutX="224.0" layoutY="137.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="chCare" layoutX="223.0" layoutY="191.0" prefWidth="150.0" />
+      <TextField fx:id="tfStock" layoutX="224.0" layoutY="256.0" />
+      <Label layoutX="181.0" layoutY="260.0" text="Stock" />
+      <Label layoutX="457.0" layoutY="92.0" text="Search Element" />
+      <Label layoutX="460.0" layoutY="153.0" text="Down Element" />
+      <TableView fx:id="tableViewElements" layoutX="136.0" layoutY="435.0" onMouseClicked="#select" prefHeight="263.0" prefWidth="746.0">
+        <columns>
+          <TableColumn fx:id="nameCl" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="materialCl" prefWidth="96.0" text="Material" />
+            <TableColumn fx:id="careCl" prefWidth="138.0" text="Care" />
+            <TableColumn fx:id="stockCl" prefWidth="130.0" text="Stock" />
+            <TableColumn fx:id="codeCl" prefWidth="140.0" text="Code" />
+            <TableColumn fx:id="statusCl" prefWidth="166.0" text="Status" />
+        </columns>
+      </TableView>
+      <Separator layoutX="133.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="5.0" />
+      <Label layoutX="448.0" layoutY="22.0" prefHeight="34.0" prefWidth="100.0" text="Elements">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="448.0" layoutY="248.0" text="Table Of Information" />
+   </children>
+</AnchorPane>

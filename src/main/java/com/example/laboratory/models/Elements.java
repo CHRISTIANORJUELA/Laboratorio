@@ -8,16 +8,14 @@ public class Elements {
     private String name;
     private Material material;
     private Care care;
-    private Wear wear;
     private int stock;
     private String code;
     private boolean status;
 
-    public Elements(String name, Material material, Care care, Wear wear, int stock, String code, boolean status) {
+    public Elements(String name, Material material, Care care, int stock, String code, boolean status) {
         this.name = name;
         this.material = material;
         this.care = care;
-        this.wear = wear;
         this.stock = stock;
         this.code = code;
         this.status = status;
@@ -47,14 +45,6 @@ public class Elements {
         this.care = care;
     }
 
-    public Wear getWear() {
-        return wear;
-    }
-
-    public void setWear(Wear wear) {
-        this.wear = wear;
-    }
-
     public int getStock() {
         return stock;
     }
@@ -71,11 +61,23 @@ public class Elements {
         this.code = code;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
     public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Elements{" +
+                "name='" + name + '\'' +
+                ", material=" + material +
+                ", care=" + care +
+                ", stock=" + stock +
+                ", code='" + code + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

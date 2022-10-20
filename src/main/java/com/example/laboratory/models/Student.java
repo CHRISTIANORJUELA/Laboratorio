@@ -25,4 +25,12 @@ public class Student extends Person{
     public void setCareer(String career) {
         this.career = career;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "semester='" + semester + '\'' +
+                ", career='" + career + '\'' +
+                '}';
+    }
 }
