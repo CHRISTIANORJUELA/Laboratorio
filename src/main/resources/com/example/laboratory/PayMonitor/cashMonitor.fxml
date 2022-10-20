@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -13,14 +15,34 @@
    <children>
       <AnchorPane prefHeight="658.0" prefWidth="132.0">
          <children>
-            <Button layoutX="32.0" layoutY="88.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons" />
-            <Button layoutX="40.0" layoutY="235.0" mnemonicParsing="false" onAction="#sendLoan" text="Loan" />
+            <Button layoutX="33.0" layoutY="118.0" mnemonicParsing="false" onAction="#sendPersons" text="Persons" />
+            <Button layoutX="38.0" layoutY="250.0" mnemonicParsing="false" onAction="#sendLoan" text="Loan" />
             <Button layoutX="29.0" layoutY="396.0" mnemonicParsing="false" onAction="#sendElements" text="Elements" />
-            <Button layoutX="21.0" layoutY="548.0" mnemonicParsing="false" onAction="#sendInformation" text="Information" />
+            <Button layoutX="23.0" layoutY="579.0" mnemonicParsing="false" onAction="#sendInformation" text="Information" />
+            <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="31.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\personas - Color.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="97.0" layoutX="21.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\tarjeta pago a color.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="79.0" layoutX="23.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\robot.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="90.0" layoutX="21.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\user.LAPTOP-AEROGVI0\Downloads\Scene First\Laboratory\src\main\java\com\example\laboratory\images\Informacion persona a color.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <Separator layoutX="132.0" orientation="VERTICAL" prefHeight="658.0" prefWidth="0.0" style="-fx-background-color: #141414;" />
-      <Label layoutX="381.0" layoutY="74.0" text="Pay Monitors">
+      <Label layoutX="385.0" layoutY="95.0" text="Pay Monitors">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>

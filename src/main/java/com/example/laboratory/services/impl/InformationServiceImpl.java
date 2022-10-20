@@ -49,38 +49,7 @@ public class InformationServiceImpl implements InformationService {
     }
 
 
-    public void  findStudentMoreLoan(ArrayList<FinishLoan>listFinishLoanController,TextArea textTarea){
-        /*ElementTest e1 = new ElementTest("car","9");
-        ElementTest e2 = new ElementTest("moto","10");
-        ElementTest e3 = new ElementTest("car","9");
-        ElementTest e4 = new ElementTest("car","30");
-        ElementTest e5 = new ElementTest("car","4");
-        ElementTest e6 = new ElementTest("car","9");
-        ArrayList<ElementTest> arrayListElements = new ArrayList<>();
-        arrayListElements.add(e1);
-        arrayListElements.add(e2);
-        arrayListElements.add(e3);
-        arrayListElements.add(e4);
-        arrayListElements.add(e5);
-        arrayListElements.add(e6);
-
-         */
-        /*
-        String maxStudet = listFinishLoanController.stream().filter(x -> x.getNameTypePerson().equalsIgnoreCase("Student"))
-                .map(Loan::getNamePersonString)
-                .max(Comparator.comparing(String::valueOf)).get();
-
-         */
-
-        /*String nameElement = arrayListElements.stream()
-                .map(ElementTest::getNameElement)
-                .max(Comparator.comparing(String::a)).get();
-
-
-        System.out.println("El elemento que mas se repite es : "+nameElement);
-
-         */
-    }
+    public void  findStudentMoreLoan(ArrayList<FinishLoan>listFinishLoanController,TextArea textTarea){}
 
     public void  getTotalAmount (double amount, TextArea textArea){
         textArea.setText("");

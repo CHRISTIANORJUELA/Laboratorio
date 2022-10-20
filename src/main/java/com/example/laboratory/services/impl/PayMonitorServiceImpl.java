@@ -4,7 +4,6 @@ import com.example.laboratory.models.FinishLoan;
 import com.example.laboratory.models.Monitor;
 import com.example.laboratory.models.PayMonitors;
 import com.example.laboratory.services.PayMonitorService;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -14,24 +13,22 @@ public class PayMonitorServiceImpl implements PayMonitorService {
     private ArrayList<PayMonitors> listPayMonitor = new ArrayList<>();
 
     public void putTable(ArrayList<FinishLoan>finishLoanController,ArrayList<Monitor> monitorController){
+        listPayMonitor.clear();
         List<FinishLoan> list = finishLoanController;
-        System.out.println(list.get(0).getNameManagerString());
         Map<String,Double> map1 = list.stream()
                 .filter(x -> x.getNameTypeManager().equalsIgnoreCase("Monitor"))
                 .collect(Collectors.groupingBy(
                         FinishLoan::getNameManagerString,
                         Collectors.summingDouble(FinishLoan::getPrice)
                         ));
-
-        map1.forEach((k,v) -> System.out.println("key: "+k+" value : "+v));
         map1.forEach((k,v)->{
             try {
                 int antiquity = getAntiquity(k,monitorController);
-                if (antiquity != -1){
+                if (antiquity == -1){
                     System.out.println("I can not possible find the antiquity");
                 }else {
                     if (antiquity > 0){
-                        v = (v*0.20)+(v*((v*0.02)*antiquity));
+                        v = (v*0.20)+(((v*0.02)*antiquity));
                         listPayMonitor.add(new PayMonitors(k,v));
                     } else if (antiquity == 0) {
                         v = v-(v*0.20);
@@ -42,7 +39,6 @@ public class PayMonitorServiceImpl implements PayMonitorService {
                 System.out.println("error");
             }
         });
-        listPayMonitor.forEach(x -> System.out.println(x.getPay()));
     }
 
 
@@ -53,6 +49,7 @@ public class PayMonitorServiceImpl implements PayMonitorService {
             List<Monitor> list2 = list1.stream()
                     .filter(x -> x.getName().equalsIgnoreCase(name.toLowerCase()))
                     .collect(Collectors.toList());
+            System.out.println("La antiquity : "+list2.get(0).getAntiquity());
             return list2.get(0).getAntiquity();
         }catch (NullPointerException e){
 

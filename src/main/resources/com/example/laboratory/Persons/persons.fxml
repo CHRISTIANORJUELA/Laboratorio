@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0a49ac;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.PersonsController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3fd7eb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratory.controllers.PersonsController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="116.0" style="-fx-background-color: #e4e6eb;" />
       <Separator layoutX="113.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="0.0" style="-fx-background-color: #141414;" />

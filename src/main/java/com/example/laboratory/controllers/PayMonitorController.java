@@ -48,7 +48,6 @@ public class PayMonitorController implements Initializable, Bar4collection1 {
     public void initialize(URL url, ResourceBundle rbs){
         try {
             getArrays();
-            refreshTable();
             putTable();
             nameMonitorCl.setCellValueFactory(new PropertyValueFactory("nameMonitor"));
             payCl.setCellValueFactory(new PropertyValueFactory("pay"));
